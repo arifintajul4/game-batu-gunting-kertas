@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/game-batu-gunting-kertas/static/css/main.7bda3585.css",
+    "main.js": "/game-batu-gunting-kertas/static/js/main.594d7b66.js",
+    "static/js/787.ed84513a.chunk.js": "/game-batu-gunting-kertas/static/js/787.ed84513a.chunk.js",
+    "static/media/icon-paper.svg": "/game-batu-gunting-kertas/static/media/icon-paper.8b57a6b108c1b8ae82931a39b10f96a2.svg",
+    "index.html": "/game-batu-gunting-kertas/index.html",
+    "static/media/icon-scissors.svg": "/game-batu-gunting-kertas/static/media/icon-scissors.3b1a5d7eb0b2f1fd3e955865ec04d9ed.svg",
+    "static/media/icon-rock.svg": "/game-batu-gunting-kertas/static/media/icon-rock.476e90a9646a87bb3645d2f09f4f7fba.svg",
+    "main.7bda3585.css.map": "/game-batu-gunting-kertas/static/css/main.7bda3585.css.map",
+    "main.594d7b66.js.map": "/game-batu-gunting-kertas/static/js/main.594d7b66.js.map",
+    "787.ed84513a.chunk.js.map": "/game-batu-gunting-kertas/static/js/787.ed84513a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7bda3585.css",
+    "static/js/main.594d7b66.js"
+  ]
+}

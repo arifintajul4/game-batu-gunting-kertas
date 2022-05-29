@@ -50,6 +50,20 @@ export function GameItem({
 function App() {
   const item = ["kertas", "gunting", "batu"];
   const itemIcon = [IconPaper, IconScissors, IconRock];
+  const itemColor = [
+    {
+      bgColor: "#2642bf",
+      color: "from-[#4865f4] to-[#5671f5]",
+    },
+    {
+      bgColor: "#c76b18",
+      color: "from-[#ec9e0e] to-[#eca922]",
+    },
+    {
+      bgColor: "#9d1736",
+      color: "from-[#dc2e4e] to-[#dd405d]",
+    },
+  ];
   const [score, setScore] = useState(0);
   const [status, setStatus] = useState("");
   const [selected, setSelected] = useState(null);
@@ -129,8 +143,8 @@ function App() {
               <div className="absolute top-[-3rem] md:top-[-5rem]">
                 <GameItem
                   onClick={() => setSelected(0)}
-                  bgColor="#2642bf"
-                  color="from-[#4865f4] to-[#5671f5]"
+                  bgColor={itemColor[0].bgColor}
+                  color={itemColor[0].color}
                 >
                   <ReactSVG src={IconPaper} />
                 </GameItem>
@@ -138,8 +152,8 @@ function App() {
               <div className="absolute top-[-3rem] right-5 md:top-[-5rem] md:right-0">
                 <GameItem
                   onClick={() => setSelected(1)}
-                  bgColor="#c76b18"
-                  color="from-[#ec9e0e] to-[#eca922]"
+                  bgColor={itemColor[1].bgColor}
+                  color={itemColor[1].color}
                 >
                   <ReactSVG src={IconScissors} />
                 </GameItem>
@@ -147,8 +161,8 @@ function App() {
               <div className="absolute bottom-0 left-[50%] translate-x-[-50%]">
                 <GameItem
                   onClick={() => setSelected(2)}
-                  bgColor="#9d1736"
-                  color="from-[#dc2e4e] to-[#dd405d]"
+                  bgColor={itemColor[2].bgColor}
+                  color={itemColor[2].color}
                 >
                   <ReactSVG src={IconRock} />
                 </GameItem>
@@ -174,8 +188,8 @@ function App() {
               <p className="mb-4">YOU PICKED</p>
               <GameItem
                 size="large"
-                bgColor="#c76b18"
-                color="from-[#ec9e0e] to-[#eca922]"
+                bgColor={itemColor[selected].bgColor}
+                color={itemColor[selected].color}
               >
                 <ReactSVG src={itemIcon[selected]} />
               </GameItem>
@@ -184,8 +198,8 @@ function App() {
               <p className="mb-4">THE HOUSE PICKED</p>
               <GameItem
                 size="large"
-                bgColor="#c76b18"
-                color="from-[#ec9e0e] to-[#eca922]"
+                bgColor={itemColor[computerSelect].bgColor}
+                color={itemColor[computerSelect].color}
               >
                 <ReactSVG src={itemIcon[computerSelect]} />
               </GameItem>
